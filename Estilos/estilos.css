@@ -2,6 +2,39 @@ body{
 	font-family: "Dancing Script";
 	width: 90%;
 	margin: auto;
+	background: #02010a;
+}
+
+@media (min-width: 900px){
+	#contenido{
+		width: 900px;
+		margin: 0 auto;
+	}
+}
+
+
+@media (max-width: 900px){
+	#Contenedor-Imagenes2{
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	#Contenedor-Imagenes2 div{
+		width: 100%;
+	}
+}
+
+
+
+img{
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+
+#Contenido-Central{
+	display: flex;
+	flex-direction: column;
 }
 
 
@@ -37,7 +70,7 @@ header, a:link, a:visited{
 }
 
 .MenuPrincipal {
-	background-color: gray;
+	/*background-color: gray;*/
 	text-align: right;
 }
 
@@ -51,40 +84,41 @@ header, a:link, a:visited{
 #Imagen-Encabezado { /*Imagen principal*/
 	background-color: #82c3a6;
 	text-align: center;
+
 	}
 
-#Imagen_Encabezado img{
+figure #foto_Encabezado{
+	margin: 10px;
 	width: 90%;
-	
+
 }
 
-#Contenido{
-	display: flex;
-	flex-direction: column;
-}
+
 
 #Contenedor-Imagenes2 {
 	background-color:  #d5c75f;
+	border: 1px solid black;
 	display: flex;
+	text-align: center;
 	width: 100%;
 
 	/*flex-direction: row;*/
 }
 
+
 #Contenedor-Imagenes2 div{
+	padding: 5px;
 	margin-top: 20px;
 	width: 50%;
-	text-align: center;
 	color: black;
+	/* background-color: white; */
 	
 }
 
 
-#foto1 img{
-	width: 300px;
-	box-shadow: 3px 3px 2px 2px black;
-	
-	/*transition: box-shadow 2s;*/
+#Contenedor-Imagenes2 img{
+	width: 350px;
+	border: 1px solid black;
 }
 
 @-webkit-keyframes animacionFoto1{
@@ -93,7 +127,7 @@ header, a:link, a:visited{
 	}
 	50%{
 		transform: rotate(10deg);
-		box-shadow: 3px 3px 2px 2px #82c3a6;	
+		box-shadow: 2px 2px 2px 2px #82c3a6;	
 	}
 	100%{
 		transform: rotate(0deg);
@@ -105,6 +139,54 @@ header, a:link, a:visited{
 #foto1 img:hover{
 /*	transform: rotate(10deg);*/
 
-	animation: animacionFoto1 2.5s;
+	animation: animacionFoto1 1.5s;
 }
 
+
+#foto2 img{
+	border: 2px solid black;
+	/*box-shadow: 2px 2px 2px 2px black;	*/
+	/*transition: box-shadow 1s;*/
+}
+
+
+#foto2 img:hover{
+	animation: animacionFoto2 1.5s;	
+}
+
+@-webkit-keyframes animacionFoto2{
+	0%{
+		
+		transform: translate(0px, 0px);
+	}
+	50%{
+		transform: translate(20px, -5px);
+		box-shadow: 2px 3px 2px 2px #82c3a6;	
+	}
+	100%{
+		transform: translate(0px, 0px);
+		box-shadow: 3px 3px 0 2px 2px black;		
+	}
+}
+
+	
+.pie{
+	padding: 10px;
+	border-radius: 0 0 10px 10px;
+	background-color: #C6d5c5;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+
+}
+
+.pie div{
+	width: 25%;
+	text-align: left;
+	padding-left: 10px;
+	margin-top: 20px;
+}
+
+.pie ul{
+	list-style: none;
+}
