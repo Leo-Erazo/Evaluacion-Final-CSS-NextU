@@ -1,0 +1,110 @@
+body{
+	font-family: "Dancing Script";
+	width: 90%;
+	margin: auto;
+}
+
+
+header, a:link, a:visited{
+	color: white;
+}
+
+
+.Encabezado{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;
+	height: 5em;	
+	display: flex;
+	flex-direction: row;
+}
+
+.Encabezado h1{
+	margin-left: 20px;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+.Encabezado div{
+	width:50%;
+	height: 50px;
+}
+
+
+.Encabezado ul{
+	list-style: none;
+	padding: 10px;
+	/*margin: center;*/
+
+}
+
+.MenuPrincipal {
+	background-color: gray;
+	text-align: right;
+}
+
+.MenuPrincipal ul> li{
+	display: inline;
+	padding: 10px;
+	margin-left: 3px;
+}
+
+
+#Imagen-Encabezado { /*Imagen principal*/
+	background-color: #82c3a6;
+	text-align: center;
+	}
+
+#Imagen_Encabezado img{
+	width: 90%;
+	
+}
+
+#Contenido{
+	display: flex;
+	flex-direction: column;
+}
+
+#Contenedor-Imagenes2 {
+	background-color:  #d5c75f;
+	display: flex;
+	width: 100%;
+
+	/*flex-direction: row;*/
+}
+
+#Contenedor-Imagenes2 div{
+	margin-top: 20px;
+	width: 50%;
+	text-align: center;
+	color: black;
+	
+}
+
+
+#foto1 img{
+	width: 300px;
+	box-shadow: 3px 3px 2px 2px black;
+	
+	/*transition: box-shadow 2s;*/
+}
+
+@-webkit-keyframes animacionFoto1{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(10deg);
+		box-shadow: 3px 3px 2px 2px #82c3a6;	
+	}
+	100%{
+		transform: rotate(0deg);
+	/*	box-shadow: 3px 3px 2px 2px black;*/
+	}
+	
+}
+
+#foto1 img:hover{
+/*	transform: rotate(10deg);*/
+
+	animation: animacionFoto1 2.5s;
+}
+
