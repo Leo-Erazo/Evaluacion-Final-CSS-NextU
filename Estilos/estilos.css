@@ -1,6 +1,6 @@
 #contenido{
 	animation: animacion-index 1s;	
-	/*transition: background 1.5s;*/
+	/*margin: 0 auto;*/
 }
 
 @-webkit-keyframes animacion-index{
@@ -9,10 +9,10 @@
 			}
 		
 		50%{	
-			margin-top: -15px;
+			margin-top: -25px;
 			}
 		75%{
-			margin-top: 10px;
+			margin-top: 25px;
 		}
 		100%{
 			margin-top: 0px;	
@@ -22,8 +22,7 @@
 
 body{
 	font-family: "Dancing Script";
-	width: 90%;
-	margin: auto;
+	/*margin: 0 auto;*/
 	background: #02010a;
 }
 
@@ -35,128 +34,56 @@ img{
 .Encabezado{
 	background-color: #5b7989;
 	border-radius: 10px 10px 0 0;
-	height: 5em;	
+	text-align: center;
 	display: flex;
 	flex-direction: row;
+	
 }
 
 .Encabezado h1{
-	margin-left: 20px;
 	text-shadow: 2px 2px 2px #02010a;
 }
 
-.Encabezado div{
-	width:50%;
-	height: 50px;
+.Encabezado h1, nav{
+	width: 50%;
+	align-items: vertical;	
 }
 
 
+.Encabezado nav ul{
+	margin-top: 30px;
+}
+
 .Encabezado ul{
 	list-style: none;
-	padding: 10px;
-	/*margin: center;*/
+	
 
 }
 
 .MenuPrincipal {
-	/*background-color: gray;*/
-	text-align: right;
+	text-align: center;
 }
 
 .MenuPrincipal ul> li{
 	display: inline;
 	padding: 10px;
-	margin-left: 3px;
 }
 
 header, a:link, a:visited{
 	color: white;
+	text-decoration: none;
 }
+
 
 #Imagen-Encabezado { /*Imagen principal*/
 	background-color: #82c3a6;
 	text-align: center;
 
-	}
+}
 
 figure #foto_Encabezado{
 	width: 90%;
 }
-
-@media (min-width: 901px){
-	#contenido{
-		width: 900px;
-		margin: auto;
-		text-align: center;
-	}
-
-	/*#contenido #contenido-central{
-		margin: 0 auto;
-	}*/
-
-	#Contenedor-Imagenes2 div{
-		width: 50%;
-	}
-}
-
-@media (max-width: 900px){
-	#Contenedor-Imagenes2{
-		/*align-items: center;*/
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#Contenedor-Imagenes2 div{
-		width: 100%;
-	}
-
-}
-
-
-
-
-
-
-#Contenido-Central{
-	display: flex;
-	flex-direction: column;
-}
-
-
-
-#Contenedor-Imagenes2 {
-	background-color:  #d5c75f;
-	/*border: 1px solid black;*/
-	display: flex;
-	text-align: center;
-	width: 100%;
-
-	/*flex-direction: row;*/
-}
-
-
-#Contenedor-Imagenes2 div{
-	/*width: 50%;*/
-	color: black;
-	background-color: white;
-}
-
-
-/*#Contenedor-Imagenes2 div figure{
-	width: 100%;
-	border: 1px solid black;
-}*/
-
-#Contenedor-Imagenes2 img{
-	/*width: 350px;*/
-	border: 1px solid black;
-}
-
-
-/*-----------------*/
-/*-----------------*/
-
 
 
 @-webkit-keyframes animacionFoto1{
@@ -165,11 +92,11 @@ figure #foto_Encabezado{
 	}
 	50%{
 		transform: rotate(10deg);
+		@-webkit-transform: rotate(10deg);
 		box-shadow: 2px 2px 2px 2px #82c3a6;	
 	}
 	100%{
 		transform: rotate(0deg);
-	/*	box-shadow: 3px 3px 2px 2px black;*/
 	}
 	
 }
@@ -184,7 +111,7 @@ figure #foto_Encabezado{
 }
 
 
-#foto2 img:hover{
+#foto2-Index img:hover{
 	animation: animacionFoto2 1.5s;	
 }
 
@@ -219,6 +146,189 @@ figure #foto_Encabezado{
 	margin-top: 20px;
 }
 
-.pie p{
-	padding: 10px;
+.pie img{
+	width: 20px;
+	margin-right: 5px;
+}
+
+.pie a{
+	color: black;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+@media (max-width: 900px){
+	.Encabezado{
+		flex-direction: column;
+	}
+	
+	.Encabezado h1, nav{
+		width: 100%;
+	}
+
+	.Encabezado nav ul{
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#contenido{
+		width: 100%;
+		/*margin: 5px;*/
+	}
+
+	#Contenedor-Imagenes2{
+		/*width: 80%;*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#Contenedor-Retratos{
+		/*width: 80%;*/
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+
+
+	#Contenedor-Retratos div{
+		width: 90%;
+		margin: 0;
+	}
+
+	#Contenedor-Retratos figure{
+		width: 90%;
+	}
+
+	#Contenedor-Retratos div figure img{
+		width: 300px;
+	}
+
+	#Contenido-Central div{
+		width: 100%;
+
+	}
+
+	#Contenido-Central div figure{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	figure img{ 
+		width: 80%;
+	}	
+
+	#Contenedor-Imagenes2 div{
+		width: 100%;
+	}
+
+/*FOOTER*/
+
+	/*.pie{
+		display: flex;
+		flex-direction: row;
+	}
+
+*/	.pie {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.pie div{
+		width: 100%;
+		text-align: left;
+	}
+}
+
+
+@media (min-width: 901px){
+	#contenido{
+		width: 900px;
+		margin: auto;
+		text-align: center;
+	}
+
+
+	#Contenedor-Imagenes2 div{
+		width: 50%;
+	}
+}
+
+
+#Contenido-Central{
+	display: flex;
+	flex-direction: column;
+}
+
+
+#Contenedor-Imagenes2 {
+	background-color:  #d5c75f;
+	display: flex;
+	text-align: center;
+	width: 100%;
+
+}
+
+
+#Contenedor-Imagenes2 div{
+	color: black;
+}
+
+
+#Contenedor-Imagenes2 img{
+	border: 1px solid black;
+}
+
+
+/*-----------------*/
+/*---------pagina de retratos y paisajes--------*/
+
+#Contenedor-Retratos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #d5c75f;
+}
+
+#Contenedor-Retratos .retratos{
+	/*background-color: white;*/
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#foto2, #foto3, #foto4, #foto5, #foto6, #foto7{
+	width: 250px;
+	margin-left: 20px;
+}
+
+
+#Contenedor-Retratos figure{
+	width: 95%;
+}
+
+#Contenedor-Retratos figure> img{
+	width: 100%;
+}
+
+#foto2{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#foto3, #foto5, #foto7{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+#foto4{
+	filter: sepia(90%);
+	-webkit-filter: sepia(90%);
 }
