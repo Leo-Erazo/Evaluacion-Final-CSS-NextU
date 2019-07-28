@@ -1,6 +1,5 @@
 #contenido{
 	animation: animacion-index 1s;	
-	/*margin: 0 auto;*/
 }
 
 @-webkit-keyframes animacion-index{
@@ -22,7 +21,6 @@
 
 body{
 	font-family: "Dancing Script";
-	/*margin: 0 auto;*/
 	background: #02010a;
 }
 
@@ -78,7 +76,14 @@ header, a:link, a:visited{
 #Imagen-Encabezado { /*Imagen principal*/
 	background-color: #82c3a6;
 	text-align: center;
+}
 
+#Contenedor-Imagenes2 a{
+	color: black;
+	font-size: 24px;
+	text-decoration: underline;
+	/*padding-bottom: 10px;*/
+	/*margin-bottom: 10px;*/
 }
 
 figure #foto_Encabezado{
@@ -228,11 +233,6 @@ figure #foto_Encabezado{
 	}
 
 /*FOOTER*/
-
-	/*.pie{
-		display: flex;
-		flex-direction: row;
-	}
 
 */	.pie {
 		display: flex;
